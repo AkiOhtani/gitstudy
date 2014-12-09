@@ -11,7 +11,7 @@ var decide = function(){
 
 	var second = Math.floor((26*(numM+1))/10)
 
-	var numJ;
+	var numJ = -2*(numY%100)+Math.floor((numY%100)/4);
 
 	var sum=(numD+second+numY%100+numYY+numJ)%7;
 
