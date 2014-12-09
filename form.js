@@ -21,15 +21,27 @@ function check(){
             return false;
         }
     }
-    var myArray = new Array(3);
+
+    var myDay =  document.myForm.dayField.value;
+    var myMonth = document.myForm.monthField.value;
+    var myYear = document.myForm.monthField.value;
+
+    switch(myMonth) {
+        case '1':
+        myMonth = '13';
+        myYear--;
+        break;
+
+        case '2':
+        myMonth = '14';
+        myYear--;
+        break;
+    }
+
     if (flag) { // もし未記入の項目があったら
         window.alert('未記入の項目があります');
         return false;
     } else {
-
-        myArray.push(document.myForm.yearField.value);
-        myArray.push(document.myForm.yearField.value);
-        myArray.push(document.myForm.yearField.value);
-        return myArray;
+        decide(myYear, myDay, myMonth);
     }
 }
