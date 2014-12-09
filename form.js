@@ -21,11 +21,15 @@ function check(){
             return false;
         }
     }
-
+    var myArray = new Array(3);
     if (flag) { // もし未記入の項目があったら
         window.alert('未記入の項目があります');
         return false;
     } else {
-        return document.myForm.yearField.value + document.myForm.monthField.value + document.myForm.dayField.value;
+
+        myArray.push(document.myForm.yearField.value);
+        myArray.push(document.myForm.yearField.value);
+        myArray.push(document.myForm.yearField.value);
+        return myArray;
     }
 }
