@@ -32,10 +32,9 @@ var decide = function(){
 
 	 break;
 	case 5;
-
-	 break;
+	break;
 	case 6;
-	
+
 	 break;
 	}
 
