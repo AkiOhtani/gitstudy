@@ -1,12 +1,12 @@
-var decide = function(){
-	var numY=1993;
+var decide(y, d, m) = function(){
+	var numY=y;
 	numY=parselnt(numY);
 	numYY=Math.floor((numY%100)/4);
 
-	var numD=20;
+	var numD=d;
 	numD=parselnt(numD);
 
-	var numM=11;
+	var numM=m;
 	numM=parselnt(numM);
 
 	var second = Math.floor((26*(numM+1))/10)
@@ -17,24 +17,25 @@ var decide = function(){
 
 	switch(sum){
 	case 0;
-
+	alert('sat');
 	 break;
 	case 1;
-
+	alert('sun');
 	 break;
 	case 2;
-
+	alert('mon');
 	 break;
 	case 3;
-
+	alert('tue');
 	 break;
 	case 4;
-
+	alert('wed');
 	 break;
 	case 5;
+	alert('thu');
 	break;
 	case 6;
-
+	alert('fri');
 	 break;
 	}
 
