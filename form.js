@@ -1,4 +1,5 @@
-$('.submit').click(function() {
+$("a").click(function() {
+  alert ('a');
   check();
   });
 
