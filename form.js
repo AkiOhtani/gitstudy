@@ -1,3 +1,7 @@
+$('.submit').click(function() {
+  check();
+  });
+
 function check(){
     var myFlag = 0;
 
