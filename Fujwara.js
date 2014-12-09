@@ -8,17 +8,35 @@ var decide = function(){
 
 	var numM=11;
 	numM=parselnt(numM);
-	numMM=numM+1;
 
 	var second = Math.floor((26*(numM+1))/10)
+
+	var numJ;
+
+	var sum=(numD+second+numY%100+numYY+numJ)%7;
+
+	switch(sum){
+	case 0;
+
+	 break;
+	case 1;
+
+	 break;
+	case 2;
+
+	 break;
+	case 3;
+
+	 break;
+	case 4;
+
+	 break;
+	case 5;
+
+	 break;
+	case 6;
 	
-
-	var numJ=7;
-
-
-	var sum=numD+second+numY%100+numYY+J;
-
-
-	$().val(sum%7);
+	 break;
+	}
 
 };
